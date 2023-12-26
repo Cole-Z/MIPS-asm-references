@@ -13,11 +13,11 @@ main:
     la $t3, valTwo		# Load address of valTwo into $t3
     lw $t3, 0($t3)		# Load value of valTwo from its memory address to $t3
 
-	beq $t0, $t3, exit    # exit if $t0 equals $t3, jump to "exit"
-	jal addFive           # branch if $t0 does not equal $t3, call subroutine "addFive" to add 5 to value
+    beq $t0, $t3, exit    # exit if $t0 equals $t3, jump to "exit"
+    jal addFive           # branch if $t0 does not equal $t3, call subroutine "addFive" to add 5 to value
 	
 exit:
-	li $v0, 10         # $v0 = 10, syscall code for exit
+    li $v0, 10         # $v0 = 10, syscall code for exit
     syscall
 
 # subroutine

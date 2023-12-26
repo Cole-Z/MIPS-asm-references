@@ -1,5 +1,3 @@
-#Cole Zill Lesson 4
-#CIS227
 
 .text
 main:

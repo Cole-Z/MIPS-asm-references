@@ -16,7 +16,7 @@ main:
                            # final result is in $t3 register which has a value of 30. 
 
     move $a0, $t3          # move $t3 value to $a0 for printing
-	li $v0, 1              # set the service code (1) for printing an integer to $a0 (argument register)
+    li $v0, 1              # set the service code (1) for printing an integer to $a0 (argument register)
     syscall
 	
     li $v0, 10             # exit the program with service code (10) for 'exit'
